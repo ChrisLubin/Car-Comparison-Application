@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Car Comparison Tool</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-md navbar-light mb-4">
+    <div class="container">
+      <a href="#" class="navbar-brand py-0"><img id="brand" class="img-fluid" src="IMG/brand.png" alt="Brand"></a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#" id="hi" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="http://lamp.cse.fau.edu/~clubin2015" target="_blank" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="http://lamp.cse.fau.edu/~clubin2015/leisure6" class="nav-link">Chat Room</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- NAVBAR END -->
+  <!-- CONTENT -->
+  <div id="content" class="container rounded mb-4">
+    <!-- VEHICLE(S) SELECTION -->
+    <div class="row text-center">
+      <!-- FIRST COLUMN -->
+      <div class="col-6 col-md-4">
+        <h1 class="border-bottom border-dark">Vehicle 1</h1>
+        <!-- YEAR SELECT -->
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Year</span>
+          </div>
+          <select id="year1" class="custom-select">
+          </select>
+        </div>
+        <!-- YEAR SELECT END -->
+
+        <!-- MAKE SELECT -->
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Make</span>
+          </div>
+          <select id="make1" id="" class="custom-select">
+            <option disabled selected value></option>
+          </select>
+        </div>
+        <!-- MAKE SELECT END -->
+
+        <!-- MODEL SELECT -->
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Model</span>
+          </div>
+          <select id="model1" id="" class="custom-select">
+            <option disabled selected value></option>
+          </select>
+        </div>
+        <!-- MODEL SELECT END -->
+
+        <!-- TRIM SELECT -->
+        <div class="input-group pb-3 border-bottom border-dark">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Trim</span>
+          </div>
+          <select id="trim1" id="" class="custom-select">
+            <option disabled selected value></option>
+          </select>
+        </div>
+        <!-- TRIM SELECT END -->
+      </div>
+
+      <!-- FIRST COLUMN END -->
+
+      <!-- SECOND COLUMN -->
+      <div class="col-6 col-md-4">
+        <h1 class="border-bottom border-dark">Vehicle 2</h1>
+        <!-- YEAR SELECT -->
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Year</span>
+          </div>
+          <select id="year2" class="custom-select">
+          </select>
+        </div>
+        <!-- YEAR SELECT END -->
+
+        <!-- MAKE SELECT -->
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Make</span>
+          </div>
+          <select id="make2" id="" class="custom-select">
+            <option disabled selected value></option>
+          </select>
+        </div>
+        <!-- MAKE SELECT END -->
+
+        <!-- MODEL SELECT -->
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Model</span>
+          </div>
+          <select id="model2" id="" class="custom-select">
+            <option disabled selected value></option>
+          </select>
+        </div>
+        <!-- MODEL SELECT END -->
+
+        <!-- TRIM SELECT -->
+        <div class="input-group pb-3 border-bottom border-dark">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Trim</span>
+          </div>
+          <select id="trim2" id="" class="custom-select">
+            <option disabled selected value></option>
+          </select>
+        </div>
+        <!-- TRIM SELECT END -->
+      </div>
+      <!-- SECOND COLUMN END -->
+
+      <!-- THIRD COLUMN -->
+      <div class="col-md-4 d-none d-md-block">
+        <h1 class="border-bottom border-dark">Vehicle 3</h1>
+        <!-- YEAR SELECT -->
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Year</span>
+          </div>
+          <select id="year3" class="custom-select">
+          </select>
+        </div>
+        <!-- YEAR SELECT END -->
+
+        <!-- MAKE SELECT -->
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Make</span>
+          </div>
+          <select id="make3" id="" class="custom-select">
+            <option disabled selected value></option>
+          </select>
+        </div>
+        <!-- MAKE SELECT END -->
+
+        <!-- MODEL SELECT -->
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Model</span>
+          </div>
+          <select id="model3" id="" class="custom-select">
+            <option disabled selected value></option>
+          </select>
+        </div>
+        <!-- MODEL SELECT END -->
+
+        <!-- TRIM SELECT -->
+        <div class="input-group pb-3 border-bottom border-dark">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Trim</span>
+          </div>
+          <select id="trim3" id="" class="custom-select">
+            <option disabled selected value></option>
+          </select>
+        </div>
+        <!-- TRIM SELECT END -->
+      </div>
+      <!-- THIRD COLUMN END -->
+    </div>
+    <!-- VEHICLE(S) SELECTION END -->
+
+    <!-- CAR SPECS -->
+    <div id="specsContent" class="container text-center">
+      <div id="tempMargin" class="row mt-3">
+        <div class='col-6 col-md-4'>
+          <img id="img1" class="img-fluid" src="" alt="Vehicle Image">
+        </div>
+        <div class='col-6 col-md-4'>
+            <img id="img2" class="img-fluid" src="" alt="Vehicle Image">
+        </div>
+        <div class="col-md-4 thirdColumn">
+            <img id="img3" class="img-fluid thirdColumn" src="" alt="Vehicle Image">
+        </div>
+      </div>
+      <div class="row specsGeneral rounded border border-dark">
+        <div class="col-12">
+          <span class="detail-title">Overview</span>
+        </div>
+      </div>
+      <div class="specsDuo">
+        <div class="row specsHead rounded">
+          <div class="col-12">
+            <span class="detail-title">MSRP</span>
+          </div>
+        </div>
+        <div class="row specsBody rounded">
+          <div class="col-6 col-md-4">
+            <span class="msrp1"></span>
+          </div>
+          <div class="col-6 col-md-4">
+            <span class="msrp2"></span>
+          </div>
+          <div class="col-md-4 thirdColumn">
+              <span class="msrp3"></span>
+          </div>
+        </div>
+      </div>
+      <div class="specsDuo">
+        <div class="row specsHead rounded">
+          <div class="col-12">
+            <span class="detail-title">MPG (Combined)</span>
+          </div>
+        </div>
+        <div class="row specsBody rounded">
+          <div class="col-6 col-md-4">
+            <span class="mpgCombined1"></span>
+          </div>
+          <div class="col-6 col-md-4">
+            <span class="mpgCombined2"></span>
+          </div>
+          <div class="col-md-4 thirdColumn">
+              <span class="mpgCombined3"></span>
+          </div>
+        </div>
+      </div>
+      <div class="specsDuo">
+        <div class="row specsHead rounded">
+          <div class="col-12">
+            <span class="detail-title">Engine(s)</span>
+          </div>
+        </div>
+        <div class="row specsBody rounded">
+          <div class="col-6 col-md-4">
+            <span id="engine1"></span>
+          </div>
+          <div class="col-6 col-md-4">
+            <span id="engine2"></span>
+          </div>
+          <div class="col-md-4 thirdColumn">
+              <span id="engine3"></span>
+          </div>
+        </div>
+      </div>
+      <div class="specsDuo">
+          <div class="row specsHead rounded">
+            <div class="col-12">
+              <span class="detail-title">Torque</span>
+            </div>
+          </div>
+          <div class="row specsBody rounded">
+            <div class="col-6 col-md-4">
+              <span id="torque1"></span>
+            </div>
+            <div class="col-6 col-md-4">
+              <span id="torque2"></span>
+            </div>
+            <div class="col-md-4 thirdColumn">
+                <span id="torque3"></span>
+            </div>
+          </div>
+        </div>
+      <div class="specsDuo">
+        <div class="row specsHead rounded">
+          <div class="col-12">
+            <span class="detail-title">Transmission(s)</span>
+          </div>
+        </div>
+        <div class="row specsBody rounded">
+          <div class="col-6 col-md-4">
+            <span id="tramission1"></span>
+          </div>
+          <div class="col-6 col-md-4">
+            <span id="tramission2"></span>
+          </div>
+          <div class="col-md-4 thirdColumn">
+              <span id="tramission3"></span>
+          </div>
+        </div>
+      </div>
+      <div class="specsDuo">
+          <div class="row specsHead rounded">
+            <div class="col-12">
+              <span class="detail-title">Seats</span>
+            </div>
+          </div>
+          <div class="row specsBody rounded">
+            <div class="col-6 col-md-4">
+              <span id="seats1"></span>
+            </div>
+            <div class="col-6 col-md-4">
+              <span id="seats2"></span>
+            </div>
+            <div class="col-md-4 thirdColumn">
+                <span id="seats3"></span>
+            </div>
+          </div>
+      </div>
+      <div class="specsDuo">
+          <div class="row specsHead rounded">
+            <div class="col-12">
+              <span class="detail-title">Drivetrain</span>
+            </div>
+          </div>
+          <div class="row specsBody rounded">
+            <div class="col-6 col-md-4">
+              <span id="drivetrain1"></span>
+            </div>
+            <div class="col-6 col-md-4">
+              <span id="drivetrain2"></span>
+            </div>
+            <div class="col-md-4 thirdColumn">
+                <span id="drivetrain3"></span>
+            </div>
+          </div>
+      </div>
+      <div class="specsDuo">
+          <div class="row specsHead rounded">
+            <div class="col-12">
+              <span class="detail-title">Curb Weight</span>
+            </div>
+          </div>
+          <div class="row specsBody rounded">
+            <div class="col-6 col-md-4">
+              <span id="weight1"></span>
+            </div>
+            <div class="col-6 col-md-4">
+              <span id="weight2"></span>
+            </div>
+            <div class="col-md-4 thirdColumn">
+                <span id="weight3"></span>
+            </div>
+          </div>
+      </div>
+      <div class="specsDuo">
+          <div class="row specsHead rounded">
+            <div class="col-12">
+              <span class="detail-title">Fuel Tank Capacity</span>
+            </div>
+          </div>
+          <div class="row specsBody rounded">
+            <div class="col-6 col-md-4">
+              <span id="tankCapacity1"></span>
+            </div>
+            <div class="col-6 col-md-4">
+              <span id="tankCapacity2"></span>
+            </div>
+            <div class="col-md-4 thirdColumn">
+                <span id="tankCapacity3"></span>
+            </div>
+          </div>
+      </div>
+      <div class="row specsGeneral rounded border border-dark">
+          <div class="col-12">
+            <span class="detail-title">Pricing</span>
+          </div>
+      </div>
+      <div class="specsDuo">
+          <div class="row specsHead rounded">
+            <div class="col-12">
+              <span class="detail-title">MSRP</span>
+            </div>
+          </div>
+          <div class="row specsBody rounded">
+            <div class="col-6 col-md-4">
+              <span class="msrp1"></span>
+            </div>
+            <div class="col-6 col-md-4">
+              <span class="msrp2"></span>
+            </div>
+            <div class="col-md-4 thirdColumn">
+                <span class="msrp3"></span>
+            </div>
+          </div>
+      </div>
+      <div class="specsDuo">
+          <div class="row specsHead rounded">
+            <div class="col-12">
+              <span class="detail-title">List Price</span>
+            </div>
+          </div>
+          <div class="row specsBody rounded">
+            <div class="col-6 col-md-4">
+              <span id="listPrice1"></span>
+            </div>
+            <div class="col-6 col-md-4">
+              <span id="listPrice2"></span>
+            </div>
+            <div class="col-md-4 thirdColumn">
+                <span id="listPrice3"></span>
+            </div>
+          </div>
+      </div>
+      <div class="specsDuo">
+          <div class="row specsHead rounded">
+            <div class="col-12">
+              <span class="detail-title">Invoice Price</span>
+            </div>
+          </div>
+          <div class="row specsBody rounded">
+            <div class="col-6 col-md-4">
+              <span id="invoicePrice1"></span>
+            </div>
+            <div class="col-6 col-md-4">
+              <span id="invoicePrice2"></span>
+            </div>
+            <div class="col-md-4 thirdColumn">
+                <span id="invoicePrice3"></span>
+            </div>
+          </div>
+      </div>
+      <div class="specsDuo">
+          <div class="row specsHead rounded">
+            <div class="col-12">
+              <span class="detail-title">Destination Charge</span>
+            </div>
+          </div>
+          <div class="row specsBody rounded">
+            <div class="col-6 col-md-4">
+              <span id="destinationCharge1"></span>
+            </div>
+            <div class="col-6 col-md-4">
+              <span id="destinationCharge2"></span>
+            </div>
+            <div class="col-md-4 thirdColumn">
+                <span id="destinationCharge3"></span>
+            </div>
+          </div>
+      </div>
+      <div class="row specsGeneral rounded border border-dark">
+          <div class="col-12">
+            <span class="detail-title">Fuel Economy</span>
+          </div>
+      </div>
+      <div class="specsDuo">
+          <div class="row specsHead rounded">
+            <div class="col-12">
+              <span class="detail-title">MPG (Highway)</span>
+            </div>
+          </div>
+          <div class="row specsBody rounded">
+            <div class="col-6 col-md-4">
+              <span id="mpgh1"></span>
+            </div>
+            <div class="col-6 col-md-4">
+              <span id="mpgh2"></span>
+            </div>
+            <div class="col-md-4 thirdColumn">
+                <span id="mpgh3"></span>
+            </div>
+          </div>
+      </div>
+      <div class="specsDuo">
+          <div class="row specsHead rounded">
+            <div class="col-12">
+              <span class="detail-title">MPG (Combined)</span>
+            </div>
+          </div>
+          <div class="row specsBody rounded">
+            <div class="col-6 col-md-4">
+              <span class="mpgCombined1"></span>
+            </div>
+            <div class="col-6 col-md-4">
+              <span class="mpgCombined2"></span>
+            </div>
+            <div class="col-md-4 thirdColumn">
+                <span class="mpgCombined3"></span>
+            </div>
+          </div>
+      </div>
+      <div class="specsDuo">
+          <div class="row specsHead rounded">
+            <div class="col-12">
+              <span class="detail-title">MPG (City)</span>
+            </div>
+          </div>
+          <div class="row specsBody rounded">
+            <div class="col-6 col-md-4">
+              <span id="mpgc1"></span>
+            </div>
+            <div class="col-6 col-md-4">
+              <span id="mpgc2"></span>
+            </div>
+            <div class="col-md-4 thirdColumn">
+                <span id="mpgc3"></span>
+            </div>
+          </div>
+      </div>
+      <div class="row specsGeneral rounded border border-dark">
+          <div class="col-12">
+            <span class="detail-title">Convenience</span>
+          </div>
+      </div>
+      <div class="specsDuo">
+          <div class="row specsHead rounded">
+            <div class="col-12">
+              <span class="detail-title">Proximity Key</span>
+            </div>
+          </div>
+          <div class="row specsBody rounded">
+            <div class="col-6 col-md-4">
+              <span id="proximityKey1"></span>
+            </div>
+            <div class="col-6 col-md-4">
+              <span id="proximityKey2"></span>
+            </div>
+            <div class="col-md-4 thirdColumn">
+                <span id="proximityKey3"></span>
+            </div>
+          </div>
+      </div>
+      <div class="specsDuo">
+          <div class="row specsHead rounded">
+            <div class="col-12">
+              <span class="detail-title">Cruise Control</span>
+            </div>
+          </div>
+          <div class="row specsBody rounded">
+            <div class="col-6 col-md-4">
+              <span id="cruiseC1"></span>
+            </div>
+            <div class="col-6 col-md-4">
+              <span id="cruiseC2"></span>
+            </div>
+            <div class="col-md-4 thirdColumn">
+                <span id="cruiseC3"></span>
+            </div>
+          </div>
+      </div>
+      <div class="specsDuo">
+          <div class="row specsHead rounded">
+            <div class="col-12">
+              <span class="detail-title">Adaptive Cruise Control</span>
+            </div>
+          </div>
+          <div class="row specsBody rounded">
+            <div class="col-6 col-md-4">
+              <span id="aCruiseC1"></span>
+            </div>
+            <div class="col-6 col-md-4">
+              <span id="aCruiseC2"></span>
+            </div>
+            <div class="col-md-4 thirdColumn">
+                <span id="aCruiseC3"></span>
+            </div>
+          </div>
+      </div>
+      <div class="specsDuo">
+          <div class="row specsHead rounded">
+            <div class="col-12">
+              <span class="detail-title">Compass</span>
+            </div>
+          </div>
+          <div class="row specsBody rounded">
+            <div class="col-6 col-md-4">
+              <span id="compass1"></span>
+            </div>
+            <div class="col-6 col-md-4">
+              <span id="compass2"></span>
+            </div>
+            <div class="col-md-4 thirdColumn">
+                <span id="compass3"></span>
+            </div>
+          </div>
+      </div>
+      <div class="specsDuo">
+          <div class="row specsHead rounded">
+            <div class="col-12">
+              <span class="detail-title">Illuminated Vanity Mirrors</span>
+            </div>
+          </div>
+          <div class="row specsBody rounded">
+            <div class="col-6 col-md-4">
+              <span id="vanityMirrors1"></span>
+            </div>
+            <div class="col-6 col-md-4">
+              <span id="vanityMirrors2"></span>
+            </div>
+            <div class="col-md-4 thirdColumn">
+                <span id="vanityMirrors3"></span>
+            </div>
+          </div>
+      </div>
+      <div class="specsDuo">
+          <div class="row specsHead rounded">
+            <div class="col-12">
+              <span class="detail-title">Sterring Wheel Material</span>
+            </div>
+          </div>
+          <div class="row specsBody rounded">
+            <div class="col-6 col-md-4">
+              <span id="steeringWheelMaterial1"></span>
+            </div>
+            <div class="col-6 col-md-4">
+              <span id="steeringWheelMaterial2"></span>
+            </div>
+            <div class="col-md-4 thirdColumn">
+                <span id="steeringWheelMaterial3"></span>
+            </div>
+          </div>
+      </div>
+      <div class="specsDuo">
+          <div class="row specsHead rounded">
+            <div class="col-12">
+              <span class="detail-title">Tilt/Telescoping Steering Column</span>
+            </div>
+          </div>
+          <div class="row specsBody rounded">
+            <div class="col-6 col-md-4">
+              <span id="steeringColumn1"></span>
+            </div>
+            <div class="col-6 col-md-4">
+              <span id="steeringColumn2"></span>
+            </div>
+            <div class="col-md-4 thirdColumn">
+                <span id="steeringColumn3"></span>
+            </div>
+          </div>
+      </div>
+      <div class="specsDuo">
+          <div class="row specsHead rounded">
+            <div class="col-12">
+              <span class="detail-title">Clock</span>
+            </div>
+          </div>
+          <div class="row specsBody rounded">
+            <div class="col-6 col-md-4">
+              <span id="clock1"></span>
+            </div>
+            <div class="col-6 col-md-4">
+              <span id="clock2"></span>
+            </div>
+            <div class="col-md-4 thirdColumn">
+                <span id="clock3"></span>
+            </div>
+          </div>
+      </div>
+      <div class="specsDuo">
+          <div class="row specsHead rounded">
+            <div class="col-12">
+              <span class="detail-title">Cupholders</span>
+            </div>
+          </div>
+          <div class="row specsBody rounded">
+            <div class="col-6 col-md-4">
+              <span id="cupHolders1"></span>
+            </div>
+            <div class="col-6 col-md-4">
+              <span id="cupHolders2"></span>
+            </div>
+            <div class="col-md-4 thirdColumn">
+                <span id="cupHolders3"></span>
+            </div>
+          </div>
+      </div>
+      <div class="specsDuo">
+          <div class="row specsHead rounded">
+            <div class="col-12">
+              <span class="detail-title">Programmable Garage-Door Opener</span>
+            </div>
+          </div>
+          <div class="row specsBody rounded">
+            <div class="col-6 col-md-4">
+              <span id="garageOpener1"></span>
+            </div>
+            <div class="col-6 col-md-4">
+              <span id="garageOpener2"></span>
+            </div>
+            <div class="col-md-4 thirdColumn">
+                <span id="garageOpener3"></span>
+            </div>
+          </div>
+      </div>
+      <div class="specsDuo">
+          <div class="row specsHead rounded">
+            <div class="col-12">
+              <span class="detail-title">Rear Window Defogger</span>
+            </div>
+          </div>
+          <div class="row specsBody rounded">
+            <div class="col-6 col-md-4">
+              <span id="rearDefogger1"></span>
+            </div>
+            <div class="col-6 col-md-4">
+              <span id="rearDefogger2"></span>
+            </div>
+            <div class="col-md-4 thirdColumn">
+                <span id="rearDefogger3"></span>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- CAR SPECS END -->
+  </div>
+  <!-- CONTENT END -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="JS/scripts.js"></script>
+
+  <?php
+
+  ?>
+</body>
+
+</html>
