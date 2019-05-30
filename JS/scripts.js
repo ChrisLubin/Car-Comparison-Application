@@ -479,10 +479,16 @@ $(document).ready(() => {
     const listPrice = JSON.stringify(carInfo.vehicle.pricing.listPrice);
     const invoicePrice = JSON.stringify(carInfo.vehicle.pricing.invoicePrice);
     const destinationCharge = JSON.stringify(carInfo.vehicle.pricing.destinationCharge);
+    const downloadImage = new Image();
 
-    $('#tempMargin').removeClass("mt-3");
-    $('#img' + columnNum).css("display", "block");
-    $('#img' + columnNum).attr("src", carInfo.vehicle.mmyt.imageUrl);
+    // Load image asynchronously
+    downloadImage.onload = function() {
+      $('#img' + columnNum).css("display", "block");
+      $('#img' + columnNum).attr("src", this.src);
+      $('#tempMargin').removeClass("mt-3");
+    }
+    downloadImage.src = carInfo.vehicle.mmyt.imageUrl;
+
     // Puts comma in correct position depending on value length
     if (msrp.length == 7) {
       $('.msrp' + columnNum).html('$' + msrp.substr(0, 1) + ',' + msrp.substr(1, 3) + ',' + msrp.substr(5, 3));
